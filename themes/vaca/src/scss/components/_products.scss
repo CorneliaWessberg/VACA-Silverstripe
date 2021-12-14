@@ -1,0 +1,160 @@
+.viewproduct {
+    text-align: center;
+}
+
+.view {
+    margin-top: 8vw;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.btn {
+    margin: 1vw;
+    width: 7vw;
+    border: none;
+    border-radius: 0.2vw;
+    background-color: white;
+    padding: 0.8vw;
+    font-weight: 600;
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+}
+
+.btn a {
+    font-weight: 600;
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+.flex-container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5.5vw;
+    margin-right: 5.5vw;
+    padding: 2vw;
+    margin-bottom: 1vw;
+    margin-top: 4vw;
+}
+
+.flex-item {
+    margin-bottom: 6vw;
+    width: 40vw;
+    line-height: 2.5;
+}
+
+.picContainer {
+    width: 40vw;
+    height: 36vw;
+}
+
+.pic {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: “”;
+    overflow: hidden;
+    height: 36vw;
+    width: 40vw;
+    object-fit: cover;
+}
+
+.productTitle {
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.productText {
+    font-size: 1.8vw;
+}
+
+.productPrice {
+    font-size: 1.8vw;
+    margin-top: 1vw;
+}
+
+.container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.pictext {
+    position: absolute;
+    bottom: 1vw;
+    left: 0.6vw;
+    color: white;
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+}
+
+.pagination {
+    text-align: center;
+    justify-content: center;
+    margin: 2vw;
+    margin-bottom: 5vw;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 0.4vw 0.8vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: white;
+    color: black;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+@media only screen and (max-width: 1000px) {
+    .btn1,
+    .btn2 {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .pictext {
+        position: absolute;
+        bottom: 1vw;
+        left: 16px;
+        color: white;
+        font-size: 2vw;
+    }
+
+    .flex-item {
+        font-size: 0.2vw;
+    }
+
+    .pagination {
+        text-align: center;
+        justify-content: center;
+        margin: 3vw;
+        padding: 1vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pagination a {
+        font-size: 2.5vw;
+    }
+}

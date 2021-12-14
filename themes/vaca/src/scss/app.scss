@@ -1,0 +1,26 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "components/footer";
+@import "components/header";
+@import "components/contact";
+@import "components/products";
+
+$color1: white;
+$color2: lightgrey;
+$myfont: "Open Sans", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background-color: #e6e6e6;
+    //    line-height: 230%;
+}
+
+#siteContainer {
+    max-width: 2336px;
+    width: 100%;
+    margin: auto auto;
+}

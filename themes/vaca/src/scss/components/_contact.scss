@@ -1,0 +1,67 @@
+.getintouch {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 35vw;
+}
+
+.contactPic {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: “”;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(85%);
+    object-position: 0 35%;
+}
+
+.contactContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.contactHead {
+    font-size: 3vw;
+    font-weight: 500;
+    color: snow;
+    margin-bottom: 2.8vw;
+}
+
+.contactText {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+
+.contactBtn {
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 0.3vw solid white;
+    border-radius: 5px;
+    font-size: 1.6vw;
+    padding: 1vw;
+    width: 14vw;
+    font-weight: 600;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contactBtn {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .getintouch {
+        line-height: 2vw;
+    }
+}
